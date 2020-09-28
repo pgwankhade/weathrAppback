@@ -11,11 +11,6 @@ app.use(bodyparser.json());
 app.use(cors())
 
 
-app.get('',(req, res)=>{
-    res.send({
-        msg:"hello"
-    })
-})
 
 app.get('/weather', (req, res) => {
     if (!req.query.address) {
